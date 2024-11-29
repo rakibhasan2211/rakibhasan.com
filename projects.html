@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পেজ কাজ চলছে</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .notice-box {
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            border-left: 5px solid #ff6347;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .emoji {
+            font-size: 3rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notice-box">
+        <div class="emoji">⚠️</div>
+        <h1>আমাদের পেজটি কাজ চলছে!</h1>
+        <p>আমরা এই পেজটি আপডেট করছি। কিছুদিনের মধ্যেই এটি পাবলিশ করা হবে। দয়া করে অপেক্ষা করুন।</p>
+    </div>
+
+</body>
+</html>

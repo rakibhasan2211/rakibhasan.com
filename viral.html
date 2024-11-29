@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভাইরাল পেজ - কাজ চলছে</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .notification-board {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-left: 8px solid #ff6347;
+            opacity: 0;
+            animation: fadeIn 3s forwards, bounce 2s infinite;
+        }
+
+        .notification-board h1 {
+            font-size: 2rem;
+            color: #333;
+            margin: 0;
+            padding-bottom: 10px;
+            animation: fadeIn 3s forwards;
+        }
+
+        .notification-board p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.5;
+            animation: fadeIn 3s forwards 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .emoji {
+            font-size: 3rem;
+            animation: bounce 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notification-board">
+        <div class="emoji">🚧</div>
+        <h1>পেজটি এখনও কাজ করছে!</h1>
+        <p>আমরা আমাদের "ভাইরাল" পেজটি আপডেট করছি। কিছুদিনের মধ্যেই এটি পাবলিশ করা হবে। দয়া করে অপেক্ষা করুন।</p>
+    </div>
+
+    <script>
+        // JavaScript can be used here for more interactive behavior if needed
+        document.addEventListener("DOMContentLoaded", function() {
+            const notificationBoard = document.querySelector(".notification-board");
+            notificationBoard.style.animation = "fadeIn 3s forwards"; // Add fadeIn animation on page load
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports & Tech World</title>
+    <link rel="stylesheet" href="style.css">
+        
+        
+</head>
+<body>
+    <div class="navbar">
+        <a href="service.html" class="active">Service</a>
+        <a href="viral.html">Viral Post</a>
+        <a href="projects.html">Projects</a>
+        
+    </div>
+
+    <div id="home" class="hero">
+        <h1>Welcome to [Mohammad  Rakib Hasan]’s Sports & Tech World</h1>
+        <p>Blending passion for sports with tech innovations</p>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <!-- Added a photo here -->
+        <img src="me.jpg" alt="Your Photo" class="about-photo">
+        <p>I am passionate about sports and technology. I love exploring new tech trends and enjoy moderating sports communities to engage with like-minded enthusiasts. Join me in this exciting journey! <br>
+        <br>
+        <br>
+        আমি খেলাধুলা এবং প্রযুক্তি সম্পর্কে উত্সাহী। আমি নতুন প্রযুক্তিগত প্রবণতাগুলি অন্বেষণ করতে পছন্দ করি এবং সমমনা উত্সাহীদের সাথে জড়িত থাকার জন্য মধ্যপন্থী ক্রীড়া সম্প্রদায়গুলি উপভোগ করি৷ এই উত্তেজনাপূর্ণ যাত্রায় আমার সাথে যোগদান করুন!</p>
+    </div>
+
+    <div id="teams" class="section">
+        <h2>Favorite Teams</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="fcb.jpg" alt="Team 1">
+                <h3>Fc Barcelona</h3>
+                <p>Fc Barcelon  more than a club.</p>
+            </div>
+            <div class="card">
+                <img src="afa.jpg" alt="Team 2">
+                <h3>Argentina</h3>
+                <p>Biggest fan of Agentina.</p>
+            </div>
+             <div class="card">
+               <img src="bsa.jpg" alt="Team 2">
+               <h3>Bashundhora Kings</h3>
+               <p>We are bron to beat. we are Bahsundhora kings.</p>
+             </div>
+              <div class="card">
+                <img src="bff.jpg" alt="Team 2">
+                <h3>Banglades Fotball</h3>
+                <p>Love it.</p>
+              </div>
+               <div class="card">
+                 <img src="bcb.jpg" alt="Team 2">
+                 <h3>Bangladesh Cricket</h3>
+                 <p>Emotion.</p>
+               </div>
+        </div>
+    </div>
+
+    <div id="players" class="section">
+        <h2>Favorite Players</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="messi.jpg" alt="Player 1">
+                <h3>Leonel Andrss Messi</h3>
+                <p>The gretest all of time.</p>
+            </div>
+            <div class="card">
+                <img src="shakib.jpg">
+                <h3>Shakib All Hasan</h3>
+                <p>Dady of All-rounder also my heart.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery" class="section">
+        <h2>Photo-Gallery</h2>
+        <div class="gallery">
+            <img src="onee.jpg" alt="Gallery Image 1">
+            <img src="twoo.jpg" alt="Gallery Image 2">
+            <img src="logo.jpg" alt="Gallery Image 3">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Sports & Tech World | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Scroll Animation
+        const sections = document.querySelectorAll('.section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        sections.forEach(section => {
+            section.classList.add('scroll-animation');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

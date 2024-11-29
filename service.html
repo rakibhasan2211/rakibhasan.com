@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>পেজ কাজ চলছে</title>
+  <link rel="stylesheet" href="service.css">
+</head>
+<body>
+  <div class="overlay">
+    <div class="dialog-box">
+      <div class="loader"></div>
+      <h1>আমাদের সার্ভিস পেজ কাজ চলছে!</h1>
+      <p>আমরা কাজ করছি। আগামী মাসে আমাদের সার্ভিস পেজটি পাবলিশ করা হবে।</p>
+      <p>আপনার অপেক্ষার জন্য ধন্যবাদ।</p>
+    </div>
+  </div>
+
+  <script src="script.js">// Optional: You can add functionality here for dismissing the overlay if needed
+// For now, it will stay on the page for a few seconds and disappear automatically.
+
+setTimeout(() => {
+  document.querySelector('.overlay').style.display = 'none';
+}, 7000); // This will hide the overlay after 7 seconds
+</script>
+</body>
+</html>
